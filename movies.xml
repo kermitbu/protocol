@@ -1,0 +1,37 @@
+<proto desc="协议定义">
+
+<message name="ReqReport">
+    <!-- type是指字段的类型， 可以取值范围：BOOL, CHAR, BYTE, FLOAT, DOUBLE, INT, UINT, INT32, UINT32, INT64, UINT64, STRING -->
+    <!-- name是指字段的名， 可以取值范围：C++可以作为变量名的所有字符 -->
+    <!-- attr是指字段的属性，可以取值范围：only, repeated, repeated说明这个字段是一个变长数组 -->
+    <!-- desc是指该字段的描述，作为注释出现在格式化的代码里面 -->
+    <field type="BOOL" name="boolvar" attr="only" desc="第一个字段的描述BOOL类型" />
+    <field type="CHAR" name="charvar" attr="only" desc="第二个字段的描述CHAR类型" />
+    <field type="BYTE" name="bytevar"  attr="only" desc="第三个字段的描述BYTE类型" />
+    <field type="FLOAT" name="floatvar" attr="only" desc="第四个字段的描述FLOAT类型" />
+    <field type="DOUBLE" name="doublevar" attr="only" desc="第四个字段的描述DOUBLE类型" />
+    <field type="INT" name="intvar" attr="only" desc="第四个字段的描述INT类型" />
+    <field type="UINT" name="uintvar" attr="only" desc="第四个字段的描述UINT类型" />
+    <field type="INT32" name="_32var" attr="only" desc="第四个字段的描述INT32类型" />
+    <field type="UINT32" name="_u32" attr="only" desc="第四个字段的描述UINT32类型" />
+    <field type="INT64" name="_i64" attr="only" desc="第四个字段的描述INT64类型" />
+    <field type="UINT64" name="_u64" attr="only" desc="第四个字段的描述UINT64类型" />
+    <field type="STRING" name="str" attr="only" desc="第四个字段的描述STRING类型" />
+</message>
+
+<message name="RspReport">
+    <field type="BOOL" name="boolvararray" attr="repeated" desc="第一个字段的描述BOOL类型" />
+    <field type="CHAR" name="charvararray" attr="repeated" desc="第二个字段的描述CHAR类型" />
+    <field type="BYTE" name="bytevararray"  attr="repeated" desc="第三个字段的描述BYTE类型" />
+    <field type="FLOAT" name="floatvararray" attr="repeated" desc="第四个字段的描述FLOAT类型" />
+    <field type="DOUBLE" name="doublevararray" attr="repeated" desc="第四个字段的描述DOUBLE类型" />
+    <field type="INT" name="intvararray" attr="repeated" desc="第四个字段的描述INT类型" />
+    <field type="UINT" name="uintvararray" attr="repeated" desc="第四个字段的描述UINT类型" />
+    <field type="INT32" name="_32vararray" attr="repeated" desc="第四个字段的描述INT32类型" />
+    <field type="UINT32" name="_u32array" attr="repeated" desc="第四个字段的描述UINT32类型" />
+    <field type="INT64" name="_i64array" attr="repeated" desc="第四个字段的描述INT64类型" />
+    <field type="UINT64" name="_u64array" attr="repeated" desc="第四个字段的描述UINT64类型" />
+    <field type="STRING" name="strarray" attr="repeated" desc="第四个字段的描述STRING类型" />
+</message>
+
+</proto>
